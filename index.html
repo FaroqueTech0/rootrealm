@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RootRealm — Android Power Tools</title>
-<meta name="google-site-verification" content="uBSgepbCjCabnQb3Q-6kyd7QRm9mo8jo1C9qnUaLxII" />
-<meta name="description" content="RootRealm — Advanced Android system tools for root, Shizuku, ADB, backup, debloating, and device management.">
+<meta name="google-site-verification" content="uBSgepbCjCabnQb3Q-6kyd7QRm9mo8jo1C9qnUaLxII">
+<meta name="description" content="RootRealm — Android system tools for root, Shizuku, ADB, SMS and call-log backup, battery diagnostics, memory information, debloating, and device management.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -61,9 +61,7 @@
     border-bottom: 1px solid rgba(120,255,170,0.25);
     padding-bottom: 10px;
   }
-  .features {
-    list-style: none;
-  }
+  .features { list-style: none; }
   .features li {
     padding: 12px 0;
     border-bottom: 1px solid rgba(120,255,170,0.08);
@@ -76,17 +74,22 @@
     font-size: 0.9rem;
   }
   footer a { color: #78FFAA; }
+  @media (max-width: 480px) {
+    .hero { padding-top: 60px; }
+    .hero h1 { font-size: 2.35rem; }
+    .btn { padding: 13px 22px; }
+  }
 </style>
 </head>
 <body>
 
 <div class="hero">
   <h1>ROOT<span>REALM</span></h1>
-  <p>Advanced Android system tools for root, Shizuku, ADB, backup, debloating, and device management.</p>
+  <p>Advanced Android system tools for root, Shizuku, ADB, backup, debloating, battery diagnostics, memory information, and device management.</p>
   <div class="badges">
     <img src="https://img.shields.io/badge/Kotlin-100%25-purple" alt="Kotlin">
-    <img src="https://img.shields.io/badge/release-v1.0.0-brightgreen" alt="Release">
-    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+    <img src="https://img.shields.io/github/v/release/Omar9t5/rootrealm?color=brightgreen" alt="Latest GitHub release">
+    <img src="https://img.shields.io/badge/license-Proprietary-red" alt="Proprietary license">
   </div>
   <a class="btn" href="https://github.com/Omar9t5/rootrealm/releases/latest">Download Latest APK</a>
 </div>
@@ -94,26 +97,46 @@
 <section>
   <h2>Features</h2>
   <ul class="features">
-    <li>🔓 <b>Root access management</b> — detect, request, and manage root permissions</li>
-    <li>📱 <b>Shizuku integration</b> — run privileged commands without full root</li>
-    <li>🖥️ <b>ADB tools</b> — run shell commands, install/uninstall packages, manage device settings</li>
-    <li>💾 <b>Backup & restore</b> — back up installed apps and app data, restore on demand</li>
-    <li>🧹 <b>Debloating</b> — remove or disable system/bloatware apps safely</li>
-    <li>⚙️ <b>Device management</b> — view system info, manage permissions and settings</li>
+    <li>🔓 <b>Root access management</b> — detect and use root access for supported privileged operations</li>
+    <li>📱 <b>Shizuku integration</b> — access supported privileged operations through Shizuku</li>
+    <li>🖥️ <b>ADB tools</b> — run supported shell commands and manage device settings</li>
+    <li>💾 <b>Backup &amp; restore</b> — back up and restore supported apps and data, subject to Android restrictions</li>
+    <li>✉️ <b>SMS &amp; call-log backup</b> — optional backup features that use the relevant permissions</li>
+    <li>🧹 <b>Debloating</b> — disable or remove supported system apps where permissions allow</li>
+    <li>🔋 <b>Battery Manager</b> — inspect charging status, voltage, current, power, and compatible charging controls</li>
+    <li>⚡ <b>Requestable Wattage</b> — show compatible wired or wireless charging options when the device and kernel support them</li>
+    <li>🧠 <b>Memory information</b> — view physical and usable RAM, ZRAM, disk swap, and RAM Expansion separately where available</li>
+    <li>⚙️ <b>Device management</b> — view system information and manage supported device-level settings</li>
   </ul>
 </section>
 
 <section>
   <h2>Requirements</h2>
   <ul class="features">
-    <li>Android 12 (API 31) or higher</li>
-    <li>Root access <b>or</b> Shizuku installed and running</li>
-    <li>USB debugging enabled (for ADB features)</li>
+    <li>Android 12 (API 31) or higher, subject to the minimum SDK of the published build</li>
+    <li>Root access or Shizuku for features that require privileged operations</li>
+    <li>USB debugging for applicable ADB features</li>
+    <li>Compatible device and kernel interfaces for advanced charging controls</li>
   </ul>
 </section>
 
+<section>
+  <h2>Downloads</h2>
+  <ul class="features">
+    <li><a href="https://github.com/Omar9t5/rootrealm/releases/latest">Latest GitHub release and APK</a></li>
+    <li><a href="https://github.com/Omar9t5/rootrealm">Browse the source repository</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>License</h2>
+  <p>RootRealm is proprietary software. The source repository is publicly viewable, but public access does not grant permission to copy, modify, redistribute, or reuse the code. See the repository's <a href="https://github.com/Omar9t5/rootrealm/blob/main/LICENSE">LICENSE</a> file for the terms.</p>
+</section>
+
 <footer>
-  Built with Kotlin · <a href="https://github.com/Omar9t5/rootrealm">View on GitHub</a>
+  Built with Kotlin · Developed by Faroque Tech ·
+  <a href="https://youtube.com/@faroquetech">YouTube</a> ·
+  <a href="https://github.com/Omar9t5/rootrealm">View on GitHub</a>
 </footer>
 
 </body>
