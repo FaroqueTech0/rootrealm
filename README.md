@@ -45,10 +45,6 @@ Root Realm includes optional SMS and call-log backup functionality. SMS and call
 
 Root and ADB operations can affect system behavior or data. Review prompts carefully and back up important data before making system-level changes. Features vary by device, Android version, root method, and kernel.
 
-## Screenshots
-
-Add 2–4 current screenshots or a GIF demonstrating the app.
-
 ## Developer
 
 **Faroque Tech** — Independent Android app developer and YouTuber.
