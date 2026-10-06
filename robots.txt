@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faroquetech0.github.io/rootrealm/sitemap.xml
