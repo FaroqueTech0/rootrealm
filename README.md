@@ -1,121 +1,87 @@
-RootRealm
+# RootRealm
 
 Advanced Android system tools for root, Shizuku, ADB, backup, debloating, and device management.
 
-Current release: v1.2.0
-License: Proprietary
-Developer: FaroqueTech
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-purple)
+![Release](https://img.shields.io/badge/release-v1.2.0-brightgreen)
+![License](https://img.shields.io/badge/license-Proprietary-red)
 
-Features
+**Website:** [https://faroquetech0.github.io/rootrealm/](https://faroquetech0.github.io/rootrealm/)
 
-- 🔓 Root access management — detect and use root access for supported privileged operations.
-- 📱 Shizuku integration — access supported privileged operations through Shizuku.
-- 🖥️ ADB tools — run supported shell commands and manage device settings.
-- 💾 Backup & restore — back up and restore supported apps and data, subject to Android restrictions.
-- ✉️ SMS & call-log backup — optional backup functionality using relevant permissions. SMS restoration depends on Android version and default-SMS-app requirements.
-- 🧹 Debloating — disable or remove supported system apps where permissions allow.
-- 🔋 Battery Manager — inspect charging status, voltage, current, power, and supported charging controls. Available options depend on device and kernel support.
-- 🧠 Memory information — view physical and usable RAM, ZRAM, disk swap, and RAM Expansion separately where system information is available.
-- ⚙️ Device management — inspect system information and manage supported device-level settings.
+## Features
 
-Requirements
+- 🔓 **Root access management** — detect and use root access for supported privileged operations.
+- 📱 **Shizuku integration** — access supported privileged operations through Shizuku.
+- 🖥️ **ADB tools** — run supported shell commands and manage device settings.
+- 💾 **Backup & restore** — back up and restore supported apps and data, subject to Android restrictions.
+- ✉️ **SMS & call-log backup** — optional backup functionality using the relevant permissions. SMS restoration depends on the Android version and default-SMS-app requirements.
+- 🧹 **Debloating** — disable or remove supported system apps where permissions allow.
+- 🔋 **Battery Manager** — inspect charging status, voltage, current, power, and supported charging controls. Wired and wireless options depend on the device and kernel.
+- 🧠 **Memory information** — view physical and usable RAM, ZRAM, disk swap, and RAM Expansion separately where system information is available.
+- ⚙️ **Device management** — inspect system information and manage supported device-level settings.
+
+## Requirements
 
 - Android 12 (API 31) or higher, subject to the actual minimum SDK of the installed build.
-- Root access or Shizuku for features requiring privileged operations.
+- Root access or Shizuku for features that require privileged operations.
 - USB debugging for applicable ADB features.
 - Supported hardware and kernel interfaces for charging controls.
 
-Feature availability varies by device, Android version, permissions, root method, and kernel.
+Some features may be unavailable depending on the device, Android version, kernel, permissions, and access method.
 
-Download
+## Download
 
-Download RootRealm from the official GitHub repository.
+Official downloads are published through the RootRealm GitHub repository.
 
-- "Latest release" (https://github.com/Omar9t5/rootrealm/releases/latest)
-- "All releases" (https://github.com/Omar9t5/rootrealm/releases)
-- "Source repository" (https://github.com/Omar9t5/rootrealm)
+- [Latest release](https://github.com/FaroqueTech0/rootrealm/releases/latest)
+- [All releases](https://github.com/FaroqueTech0/rootrealm/releases)
+- [Source repository](https://github.com/FaroqueTech0/rootrealm)
+- [Website](https://faroquetech0.github.io/rootrealm/)
 
-GitHub is the official source for RootRealm releases, release notes, and updates.
+For the safest installation experience, obtain RootRealm from the official releases page.
 
-Official Downloads & APK Authenticity
+> **Note:** Starting from the next update, SHA-256 checksums will be published with every official release so you can easily verify the authenticity of the APK.
 
-RootRealm is developed and maintained by FaroqueTech.
+## Official Downloads & APK Authenticity
 
-APK files distributed through external websites, file-sharing services, or third-party repositories are not verified or controlled by FaroqueTech unless explicitly confirmed by the developer.
+RootRealm is developed and maintained by FaroqueTech. The official GitHub repository is the primary source for release announcements, APK downloads, release notes, and project information.
 
-A third-party APK may be an unchanged copy, an outdated build, or a modified version. The hosting location alone does not establish whether an APK is authentic or safe.
+### Third-party downloads
 
-How to verify an APK
+RootRealm APKs hosted on external websites, file-sharing services, or third-party repositories are not verified or controlled by FaroqueTech unless explicitly confirmed by the developer.
+
+A third-party APK may be an unchanged copy of an official release, an outdated build, or a modified version. The hosting location alone does not establish whether a file is authentic or safe.
+
+FaroqueTech cannot guarantee the integrity, authenticity, or safety of independently distributed or modified copies that have not been verified against an official release.
+
+### How to verify an APK
+
+Before installing a RootRealm APK obtained from a third-party source:
 
 1. Compare its SHA-256 checksum with the checksum published for the corresponding official release, when available.
 2. Verify its signing certificate against the official release's signing-certificate fingerprint.
 3. Check the package name, version name, and version code against the official release information.
-4. Prefer downloading updates directly from the official GitHub releases page.
+4. Download future updates from the official GitHub repository whenever possible.
 
-A matching SHA-256 checksum confirms that the file is identical to the trusted reference file. A matching signing certificate helps establish that the APK was signed with the same key. Neither check alone guarantees that the software is free from vulnerabilities.
+A matching SHA-256 checksum confirms that the files are identical to the trusted reference file. A matching signing certificate helps establish that the APK was signed with the same signing key. Neither check, by itself, guarantees that the software is free from vulnerabilities.
 
-Important: The RootRealm name, logo, screenshots, or package name alone do not prove that an APK is an authentic official release.
+**Important:** Do not assume that an APK is official simply because it uses the RootRealm name, logo, package name, or screenshots.
 
-Reporting suspicious copies
+### Reporting suspicious copies
 
-If you find a suspicious APK claiming to be an official RootRealm release, report it through "GitHub Issues" (https://github.com/Omar9t5/rootrealm/issues).
+If you find an APK that appears to have been modified or distributed deceptively under the RootRealm name, please report it through:
 
-Include the relevant download URL and version information when possible. Do not post private information or sensitive device data.
+[GitHub Issues](https://github.com/FaroqueTech0/rootrealm/issues)
 
-Build from Source
+Include the relevant download URL, version information, and available verification details. Do not upload private information or sensitive device data.
 
-The source code is publicly viewable for reference and transparency. Public access does not grant permission to reuse, modify, redistribute, or incorporate the code into another project.
+## Build from Source
 
-To clone the repository:
+The source code is publicly viewable for reference and transparency. Public repository access does not grant permission to reuse, modify, redistribute, or incorporate the code into another project.
 
-git clone https://github.com/Omar9t5/rootrealm.git
+If you want to inspect the repository, you can clone it using Git:
+
+```bash
+git clone https://github.com/FaroqueTech0/rootrealm.git
 cd rootrealm
 ./gradlew assembleDebug
-
-Building may require a compatible JDK, Android SDK, build tools, Gradle configuration, and project-specific dependencies.
-
-A locally built debug APK may differ from the official release APK in signing certificate, build configuration, or other metadata.
-
-Permissions & Privacy
-
-RootRealm includes optional SMS and call-log backup functionality. Relevant permissions are intended for these features when the user chooses to use them.
-
-- SMS permissions: Support applicable SMS backup functionality.
-- Call-log permissions: Support backing up call history.
-- Battery and memory information: SMS and call-log permissions are not inherently required just to view these details.
-- SMS restoration: Subject to Android version-specific restrictions and, where applicable, default-SMS-app requirements.
-
-Grant only the permissions required for the features you intend to use. Review permission prompts carefully.
-
-Root access, ADB commands, app removal, and system-level changes can affect device operation or cause data loss. Back up important data before performing potentially destructive operations.
-
-Feature behavior may vary depending on the device, Android version, root method, Shizuku configuration, and kernel support.
-
-Developer
-
-FaroqueTech
-Independent Android app developer and YouTuber.
-
-- YouTube: https://youtube.com/@faroquetech
-- GitHub: https://github.com/Omar9t5/rootrealm
-- Official releases: https://github.com/Omar9t5/rootrealm/releases
-
-Proprietary License
-
-Copyright © 2026 FaroqueTech. All rights reserved.
-
-This repository is publicly accessible for viewing and reference purposes only. No permission is granted to copy, modify, redistribute, sublicense, or incorporate this source code, in whole or in part, into another project without prior written permission from the copyright holder, except where applicable law provides otherwise.
-
-Public visibility does not grant permission to reuse the code. This notice communicates the intended restrictions but does not technically prevent people from downloading or copying publicly accessible files.
-
-All rights to the source code remain reserved by the copyright holder unless explicitly licensed or authorized in writing.
-
-Support & Contributions
-
-Report bugs and request features through "GitHub Issues" (https://github.com/Omar9t5/rootrealm/issues).
-
-When reporting an issue, include the RootRealm version, Android version, device model, and relevant error details where possible.
-
-Do not include passwords, authentication tokens, private SMS contents, call history, personal documents, or other sensitive information in public reports.
-
-Thank you for supporting RootRealm and FaroqueTech.
