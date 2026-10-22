@@ -6,7 +6,7 @@ Advanced Android system tools for root, Shizuku, ADB, backup, debloating, and de
 ![Release](https://img.shields.io/badge/release-v1.2.0-brightgreen)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
-**Website:** [https://faroquetech0.github.io/rootrealm/](https://faroquetech0.github.io/rootrealm/)
+**Website:** [https://faroquetech0.github.io/rootrealm/](https://faroquetech0.github.io/)
 
 ## Features
 
